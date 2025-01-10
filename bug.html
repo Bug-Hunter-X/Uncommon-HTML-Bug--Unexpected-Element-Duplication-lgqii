@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Incorrect way to select and modify the element
+    document.getElementById('myDiv').innerHTML = document.getElementById('myDiv').innerHTML + "<p>This is added text.</p>";
+    //This will duplicate the div element unexpectedly
+  </script>
+</body>
+</html>
